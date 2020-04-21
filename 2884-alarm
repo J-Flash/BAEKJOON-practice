@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b;
+	int c;
+	double d, e;
+
+	scanf_s("%d %d", &a, &b);
+
+	if (a != 0)
+		c = a * 60 + b;
+	else c = 24 * 60 + b;
+
+	d = (c - 45) / 60;
+	if (d == 24)
+		d = 0;
+
+	e = (c - 45) % 60;
+
+
+	cout << d << " " << e << endl;
+
+
+
+	return 0;
+}
