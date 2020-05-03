@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+    int newNumber;
+    int cnt;
+    
+    cin >> number;
+    
+    while(number!=newNumber)
+    {
+        if(number < 10)
+        {
+            newNumber = number * 10 + number;
+            cnt++;
+        }
+        else
+        {
+            newNumber = ((number / 10) + (number % 10)) + (number % 10)*10;
+            cnt++;
+        }
+    }
+    
+    printf("%d", cnt);
+    
+    return 0;
+}
